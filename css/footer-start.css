@@ -1,0 +1,53 @@
+@charset "UTF-8";
+.footer {
+  background-color: var(--background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-nav {
+  min-width: 231px;
+}
+
+.foot-logo {
+  display: block;
+  margin-bottom: 28px;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+.part {
+  color: #2196F3;
+}
+
+.address {
+  font-style: normal;
+  text-decoration: none;
+}
+
+.address-li:not(:last-child) {
+  margin-bottom: 9px;
+  /* в мене на мекеті показує 12px */
+}
+
+.address-link {
+  color: var(--white-color);
+  line-height: 1.71;
+  text-decoration: none;
+}
+
+.address-contact {
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address-contact:hover,
+.address-contact:focus {
+  color: var(--accent-color);
+}/*# sourceMappingURL=footer-start.css.map */

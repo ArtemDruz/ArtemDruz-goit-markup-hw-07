@@ -1,0 +1,32 @@
+
+.privileges {
+    display: flex;
+}
+.privileges-li {
+    width: calc((100% - 90px) / 4);
+}
+.privileges-li:not(:last-child){
+    margin-right: 30px;
+}
+.privileges-div {
+    height: 120px;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.privileges-title {
+    font-size: 14px;
+    color: var(--second-text-color);
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+.privileges-text {
+    color: var(--primary-text-color);
+    line-height: 1.7;
+    margin-top: 10px;
+}
