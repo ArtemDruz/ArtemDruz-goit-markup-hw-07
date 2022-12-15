@@ -38,12 +38,13 @@
     border-radius: 50%;
     fill: #000;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+        outline: none;
+    }
 }
-.modal-button:hover,
-.modal-button:focus {
-    fill: var(--accent-color);
-    outline: none;
-}
+
 
 .modal-heading {
     font-weight: 700;
@@ -78,17 +79,18 @@
     border-radius: 4px;
     padding-left: 42px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus{
+        border-color: var(--accent-color);
+        outline: none;
+    }
+    &:focus + svg{
+        fill:var(--accent-color) ;
+}
 }
 
-.modal-input:focus{
-    border-color: var(--accent-color);
-    outline: none;
 
-}
 
-.modal-input:focus + svg{
-    fill:var(--accent-color) ;
-}
+
 .modul-textarea-group {
     margin-bottom: 20px;
 }
@@ -109,40 +111,42 @@
     padding: 12px 16px;
     resize: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &::placeholder {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+
+        color: rgba(117, 117, 117, 0.5);
+    }
+    &:focus {
+        border-color: var(--accent-color);
+        outline: none;
+    }
 }
 
-.modal-text::placeholder {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
 
-    color: rgba(117, 117, 117, 0.5);
-}
 
-.modal-text:focus {
-    border-color: var(--accent-color);
-    outline: none;
-}
 .modul-politic-group {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
 }
-.modal-politic-lable::before {
-    content: '';
-    width: 16px;
-    height: 16px;
-    border: 2px solid #212121;
-    border-radius: 2px;
-    margin-right: 8px;
 
-}
 .modal-politic-lable {
     display: flex;
     align-items: center;
     line-height: 1.7;
     color: var(--primary-text-color);
+    &::before {
+        content: '';
+        width: 16px;
+        height: 16px;
+        border: 2px solid #212121;
+        border-radius: 2px;
+        margin-right: 8px;
+
+    }
 }
 .modal-politic-cgeck:checked + label::before {
     border: none;

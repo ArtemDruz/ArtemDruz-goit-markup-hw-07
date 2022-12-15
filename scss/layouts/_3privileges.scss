@@ -4,10 +4,11 @@
 }
 .privileges-li {
     width: calc((100% - 90px) / 4);
+    &:not(:last-child){
+        margin-right: 30px;
+    }
 }
-.privileges-li:not(:last-child){
-    margin-right: 30px;
-}
+
 .privileges-div {
     height: 120px;
     background-color: #F5F4FA;

@@ -10,10 +10,11 @@
     width: calc((100% - 60px) / 3);
     position: relative;
     display: flex;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
-.work-li:not(:last-child) {
-    margin-right: 30px;
-}
+
 .work-p {
     padding:27px;
     color:var(--white-color);
