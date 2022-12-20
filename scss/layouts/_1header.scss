@@ -25,15 +25,15 @@
 .nav {
     display: inherit;
 }
-.site-nav {
+.site__nav {
     display: flex;
 }
-.site-nav-li:not(:last-child) {
+.site-nav__li:not(:last-child) {
     margin-right: 50px;
 }
 
 
-.site-nav .link{
+.site__nav .link{
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
